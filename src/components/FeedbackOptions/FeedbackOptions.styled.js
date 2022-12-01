@@ -3,7 +3,11 @@ import styled from 'styled-components';
 export const ButtonList = styled.ul`
   list-style: none;
   display: flex;
+  justify-content: center;
   gap: 10px;
+  margin-bottom: 0;
+  margin-top: 25px;
+  padding: 0;
 `;
 
 export const BtnFeedback = styled.button`
@@ -14,4 +18,8 @@ export const BtnFeedback = styled.button`
   padding: 5px;
   text-transform: capitalize;
   cursor: pointer;
+
+  &:active {
+    background: linear-gradient(to right, #536976, #292e49);
+  }
 `;
